@@ -1,0 +1,303 @@
+<html>
+<head>
+<link rel="stylesheet" href="b2.css">
+<script type="text/javascript">
+function mob()
+{
+var mob=frm.mobi.value;
+if(mob.length==0)
+{
+alert("Enter Mobile No.");
+}
+if(mob.length!=0) 
+ {
+  if(isNaN(mob)==false)
+   {
+    if(mob.length!=10)
+     {
+     alert("Invalid Mobile No.");
+     }
+   }
+ }	
+if(isNaN(mob))
+{
+alert("Kindly ! Input Numeric Value");
+}
+}
+
+
+function pcode()
+{
+var pc=frm.pcod.value;
+if(pc.length==0)
+{
+alert("Enter Pin Code No.");
+}
+if(pc.length!=0) 
+ {
+  if(isNaN(pc)==false)
+   {
+    if(pc.length!=6)
+     {
+     alert("Invalid Pin Code No.");
+     }
+   }
+ }	
+if(isNaN(pc))
+{
+alert("Kindly ! Input Numeric Value");
+}
+}
+
+function fname()
+{
+var n1=frm.firstn.value;
+frm.firstn.value=n1.toUpperCase();
+if(n1.length==0)
+ {
+  alert("Kindly! Enter Your Name");
+ }
+if(isNaN(n1)==false)
+ {
+   if(n1.length!=0)
+    {
+    alert("Name must contain Alphabets");
+   }
+ }
+}
+
+function lname()
+{
+var n2=frm.lastn.value;
+frm.lastn.value=n2.toUpperCase();
+if(n2.length==0)
+ {
+  alert("Kindly! Enter last Name");
+ }
+if(isNaN(n2)==false)
+ {
+   if(n2.length!=0)
+    {
+    alert("Name must contain Alphabets");
+   }
+ }
+}
+
+
+function cst()
+{
+var pno=frm.pname.selectedIndex;
+var pdc=frm.procod.selectedIndex;
+if(pno==0)
+ {
+   if(pdc==0)
+    { 
+      frm.cost.value="Rs. 30,999";
+      frm.pc.value="A-";
+    }
+   if(pdc==1)
+    { 
+      frm.cost.value="Rs. 45,999";
+      frm.pc.value="A-";
+    }
+ }
+if(pno==1)
+ {
+   if(pdc==0)
+    { 
+      frm.cost.value="Rs. 12,999";
+      frm.pc.value="V-";
+   }
+   if(pdc==1)
+    { 
+      frm.cost.value="Rs. 18,999";
+      frm.pc.value="V-";
+    }
+ }
+if(pno==2)
+ {
+   if(pdc==0)
+    { 
+      frm.cost.value="Rs. 15,999";
+      frm.pc.value="O-";
+     }
+   if(pdc==1)
+    { 
+      frm.cost.value="Rs. 19,999";
+      frm.pc.value="O-";
+    }
+ }
+if(pno==3)
+ {
+   if(pdc==0)
+    { 
+      frm.cost.value="Rs. 11,999";
+      frm.pc.value="S-";
+     }
+   if(pdc==1)
+    { 
+      frm.cost.value="Rs. 16,999";
+      frm.pc.value="S-"; 
+    }
+ }
+if(pno==4)
+ {
+   if(pdc==0)
+    { 
+      frm.cost.value="Rs. 14,999";
+      frm.pc.value="M-";
+     }
+   if(pdc==1)
+    { 
+      frm.cost.value="Rs. 18,999";
+      frm.pc.value="M-";
+    }
+ }
+if(pno==5)
+ {
+   if(pdc==0)
+    { 
+      frm.cost.value="Rs. 11,999";
+      frm.pc.value="MI-";
+    }
+   if(pdc==1)
+    { 
+      frm.cost.value="Rs. 14,999";
+      frm.pc.value="MI-";
+   }
+ }
+ 
+}
+
+function sta()
+{
+var ct=frm.state.value;
+frm.state.value=ct.toUpperCase();
+if(ct.length==0)
+{
+alert("Kindly! Enter Yours State");
+}
+if(ct.length!=0)
+ {
+  if(isNaN(ct)==false)
+   {
+     alert("Enter correct State Name");
+   }
+ }
+}
+
+function dis()
+{
+var dt=frm.dist.value;
+frm.dist.value=dt.toUpperCase();
+if(dt.length==0)
+{
+alert("Kindly! Enter Yours District");
+}
+if(dt.length!=0)
+ {
+  if(isNaN(dt)==false)
+   {
+     alert("Enter correct District Name");
+   }
+ }
+}
+
+function tow()
+{
+var tw=frm.town.value;
+frm.town.value=tw.toUpperCase();
+if(tw.length==0)
+{
+alert("Kindly! Enter Yours Town");
+}
+if(tw.length!=0)
+ {
+  if(isNaN(tw)==false)
+   {
+     alert("Enter correct Town Name");
+   }
+ }
+}
+
+
+</script>
+
+<title>Order Form</title>
+</head>
+<body  text="black" vlink="red" alink="red">
+<center>
+<IMG SRC="hlogo.png" width="800" height="100"></center><br>
+<hr size="3" color="purple"><br>
+<center><img src="ord2.png" width="1000" height="250">
+
+<script type="text/javascript">
+document.write("<font color='white'>");
+var d=new Date();
+var a=d.getDate();
+var b=d.getMonth()+1;
+var c=d.getFullYear();
+document.write("<h1>Today Date: "+a+"/"+b+"/"+c+"</h1>");
+</script><br><br></center>
+<form name="frm" action="sdata.php" method="post"><center>
+<table  border="5" bordercolor="lime" cellpadding="5" cellspacing="15">
+<tr>
+<th>First Name:<br><br></th>
+<th><input type="text" name="firstn" style="font-size: 22;" onBlur="fname()"> <br><br></th>
+</tr>
+<tr><th>Last Name:<br><br></th>
+<th><input type="text" name="lastn" style="font-size: 22;" onBlur="lname()"><br><br></th></tr>
+<tr>
+<th>Mobile No:<br><br></th>
+<th><input type="text" name="mobi" MAXLENGTH="10" style="font-size: 22;" onBlur="mob()"><br><br></th></tr>
+<tr>
+<th>Pin Code:<br><br></th>
+<th><input type="text" name="pcod" MAXLENGTH="6" style="font-size: 22;" onBlur="pcode()"><br><br></th></tr>
+<tr><th>State:<br><br></th>
+<th> <input type="text" name="state" style="font-size: 22;" onBlur="sta()"><br><br></th>
+</tr><tr>
+<th>District:<br><br></th>
+<th><input type="text" name="dist" style="font-size: 22;" onBlur="dis()"><br><br></th></tr>
+<tr>
+<th>City/Town:<br><br></th>
+<th><input type="text" name="town" style="font-size: 22;" onBlur="tow()"><br><br></th><tr>
+<tr>
+<th>Select Product Name:<br><br></th>
+<th><select name="pname" style="font-size: 22;">
+<option>Apple
+<option>Vivo
+<option>Oppo
+<option>Samsung
+<option>Motorola
+<option>Xiaomi(Mi)
+</select><br><br>
+</th></tr>
+<tr>
+<th>Product Code:<br><br></th>
+<th>
+<select name="procod" style="font-size: 22;">
+<option>O-6
+<option>7-12
+</select><br><br></th></tr>
+<tr>
+<th>Product Cost:<br><br></th>
+<th><input type="text" name="cost" style="font-size: 22;">
+<input type="button" value="See Price" style="font-size: 22;" onClick="cst()"><br><br></th></tr>
+<tr>
+<th>Yours Product Code:<br><br></th>
+<th><input type="text" name="pc" style="font-size: 22;"><br><br></th></tr>
+<tr>
+<th><center><input type="submit" value="Order Now" name="sub" style="font-size: 22;" ></center></th>
+<th><input type="reset" value="Reset" style="font-size: 22;" ></th></tr>
+</table> 
+</form><br><br>
+<br><br><center>
+<a href="corder.php"><img src="co.png" height="80" width="350"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="udata.php"><img src="ud.png" height="80" width="350"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="vdata.php"><img src="vd.png" height="80" width="350"></a>
+<br><br>
+<a href="home.html"><img src="b1.png" height="80" width="350"></a></center>
+</body>
+</html>

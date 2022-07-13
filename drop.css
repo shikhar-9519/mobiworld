@@ -1,0 +1,33 @@
+
+*{
+margin: 0;
+padding: 0;
+}
+
+.tr{
+color: red;
+font-size: 16px;
+}
+.footer {
+    height: 25vh;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url("1.jpg");
+    color: white;
+    text-align: center;
+}
+body {
+    background-image: url("z121.jpg");
+    background-attachment: fixed;
+   margin-left: 5em;
+   margin-right: 5em;
+   margin-top: 0.1em;
+}
+table {
+    width: 100%;
+   }
+td {
+    color: black;
+    font-size: 19px;
+}

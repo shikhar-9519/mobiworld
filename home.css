@@ -1,0 +1,26 @@
+
+
+.footer {
+    height: 25vh;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url("1.jpg");
+5    color: white;
+    text-align: center;
+}
+
+body {
+    background-image: url("3.jpg");
+    background-attachment: fixed;
+   margin-left: 5em;
+   margin-right: 5em;
+   margin-top: 0.1em;
+}
+table {
+    width: 100%;
+   }
+td {
+    color: white;
+    font-size: 20px;
+}

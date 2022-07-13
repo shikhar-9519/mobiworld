@@ -1,0 +1,22 @@
+th {
+    color: lime;
+    font-size: 30px;
+    font-family: Garamond;
+    text-align:center;
+   vertical-align: center;
+}
+td {
+    color: lime;
+    font-size: 30px;
+    
+    font-family: Garamond;
+    text-align:center;
+   vertical-align: center;
+}
+body {
+    background-image: url("bg2.jpg");
+    background-attachment: fixed;
+   margin-left: 5em;
+   margin-right: 5em;
+   margin-top: 0.1em;
+}
